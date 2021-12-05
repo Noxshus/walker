@@ -3,28 +3,49 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Merc Incremental</title>
+        <title>Walker</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="stylesheet" href="walker.css">
         <script src="js/main.js"></script>
         <script src="js/menu.js"></script> 
     </head>
-    <body>
 
-        <section class="section">
-            <div class="container">
-                <h1 class="title">
-                    Hello World
-                </h1>
-                <p class="subtitle">
-                    My first website with <strong>Bulma</strong>!
-                </p>
+
+    <body>
+        <section class="hero is-small"> <!--upper part of screen-->
+            <div class="hero-body">
+                <nav class="level">
+                    <div class="level-item has-text-centered">
+                      <div>
+                        <p class="heading">Tweets</p>
+                        <p class="title">3,456</p>
+                      </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                      <div>
+                        <p class="heading">Following</p>
+                        <p class="title">123</p>
+                      </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                      <div>
+                        <p class="heading">Followers</p>
+                        <p class="title">456K</p>
+                      </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                      <div>
+                        <p class="heading">Likes</p>
+                        <p class="title">789</p>
+                      </div>
+                    </div>
+                </nav>
             </div>
         </section>
 
-        <section class="section"> <!--2nd half of screen-->
+        <section class="section"> <!--center part of screen-->
             <div class="columns"> 
-                <div class="column is-one-quarter">
+                <div class="column is-one-fifth">
                     <aside class="menu">
                         <p class="menu-label">
                             General
@@ -32,31 +53,6 @@
                         <ul class="menu-list">
                             <li><a id="dashboardmenuitem" class="is-active" onclick="MenuClick(this.id)">Dashboard</a></li>
                             <li><a id="customersmenuitem" onclick="MenuClick(this.id)">Customers</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            Administration
-                        </p>
-                        <ul class="menu-list">
-                            <li><a>Team Settings</a></li>
-                            <li>
-                            <a>Manage Your Team</a>
-                            <ul>
-                                <li><a>Members</a></li>
-                                <li><a>Plugins</a></li>
-                                <li><a>Add a member</a></li>
-                            </ul>
-                            </li>
-                            <li><a>Invitations</a></li>
-                            <li><a>Cloud Storage Environment Settings</a></li>
-                            <li><a>Authentication</a></li>
-                        </ul>
-                        <p class="menu-label">
-                            Transactions
-                        </p>
-                        <ul class="menu-list">
-                            <li><a>Payments</a></li>
-                            <li><a>Transfers</a></li>
-                            <li><a>Balance</a></li>
                         </ul>
                     </aside>
                 </div>
@@ -66,12 +62,11 @@
                         <p class="subtitle">Dashboard</p>
                     </div>
                       
-                    <div id="customersmenucontent" class="menucontent">
+                    <div id="customersmenucontent" class="menucontent" style="display: none;">
                         <p class="subtitle">Customers</p>
                     </div>
                 </div>
             </div>
         </section>
-
     </body>
 </html>

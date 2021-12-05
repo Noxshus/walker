@@ -1,5 +1,5 @@
 function MenuClick(_menuItem) {
-    var _count, _menuContent, _menuItemPrevious;
+    let _count, _menuContent, _menuItemPrevious;
 
      //Get all elements with class="menucontent" and hide them
     _menuContent = document.getElementsByClassName("menucontent");

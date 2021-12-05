@@ -15,7 +15,7 @@ function SaveGame ()
 
 function LoadGame ()
 {
-    var gameData = JSON.parse(localStorage.getItem("walkerSave"));
+    let gameData = JSON.parse(localStorage.getItem("walkerSave"));
     if (typeof gameData.cookies !== "undefined") cookies = gameData.cookies; 
 }
 
