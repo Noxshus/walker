@@ -17,55 +17,101 @@
                 <nav class="level">
                     <div class="level-item has-text-centered">
                       <div>
-                        <p class="heading">Tweets</p>
-                        <p class="title">3,456</p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered">
-                      <div>
-                        <p class="heading">Following</p>
-                        <p class="title">123</p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered">
-                      <div>
-                        <p class="heading">Followers</p>
-                        <p class="title">456K</p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered">
-                      <div>
-                        <p class="heading">Likes</p>
-                        <p class="title">789</p>
+                        <p class="heading">Ticker Goes Here</p>
+                        <p class="title">Ticker here</p>
                       </div>
                     </div>
                 </nav>
             </div>
         </section>
 
+        <div class="tabs is-centered is-boxed">
+            <ul>
+              <li class="is-active"><a>Combat</a></li>
+              <li><a>Armoury</a></li>
+              <li><a>Pantheon</a></li>
+            </ul>
+        </div>
+
         <section class="section"> <!--center part of screen-->
             <div class="columns"> 
-                <div class="column is-one-fifth">
-                    <aside class="menu">
-                        <p class="menu-label">
-                            General
-                        </p>
-                        <ul class="menu-list">
-                            <li><a id="dashboardmenuitem" class="is-active" onclick="MenuClick(this.id)">Dashboard</a></li>
-                            <li><a id="customersmenuitem" onclick="MenuClick(this.id)">Customers</a></li>
-                        </ul>
-                    </aside>
+
+                <div class="column is-2"> <!--Right sidebar-->
+
+                    <div class="tile is-ancestor is-vertical">
+                        <div class="tile is-child box background-sharp-orange">
+                            <p class="heading">tile 1</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="tile is-child box background-sharp-green">
+                            <p class="heading">tile 2</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="tile is-child box background-sharp-yellow">
+                            <p class="heading">tile 3</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
                 <div class="column"> <!--Main content screen-->
 
                     <div id="dashboardmenucontent" class="menucontent">
-                        <p class="subtitle">Dashboard</p>
+                        <p class="subtitle">Combat</p>
                     </div>
                       
                     <div id="customersmenucontent" class="menucontent" style="display: none;">
-                        <p class="subtitle">Customers</p>
+                        <p class="subtitle">Armoury</p>
+                    </div>
+
+                    <div id="customersmenucontent" class="menucontent" style="display: none;">
+                        <p class="subtitle">Pantheon</p>
                     </div>
                 </div>
+
+                <div class="column is-2"> <!--Right sidebar-->
+
+                    <div class="tile is-ancestor is-vertical">
+                        <div class="tile is-child box background-sharp-blue">
+                            <p class="heading">tile 1</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="tile is-child box background-sharp-orange">
+                            <p class="heading">tile 2</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="tile is-child box background-sharp-green">
+                            <p class="heading">tile 3</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+        <section class="hero is-small"> <!--lower part of screen-->
+            <div class="hero-body">
+                <nav class="level">
+                    <div class="level-item has-text-centered">
+                      <div>
+                        <p class="heading">Weapon Info Goes Here</p>
+                        <p class="title">Weapon Info</p>
+                      </div>
+                    </div>
+                </nav>
             </div>
         </section>
     </body>
