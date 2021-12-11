@@ -1,11 +1,12 @@
 var gameData = {
 
-    activeMenuItem : "dashboardmenuitem",
+    //activeMenuItem : "dashboardmenuitem",
+    activeTabItem : "combattabitem"
 }
 
 window.onload = function () 
 {
-    document.getElementById(ReturnContentFromItem(gameData.activeMenuItem)).style.display = "block"; //unhide the previously selected menu item onload
+    document.getElementById(ReturnContentFromItem(gameData.activeTabItem)).style.display = "block"; //unhide the previously selected menu item onload
 }
 
 function SaveGame ()

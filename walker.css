@@ -1,13 +1,10 @@
 /* https://www.shutterstock.com/blog/neon-color-palettes */
 
 
-
-
-
 .background-sharp-blue
 {
     background-color: #A0EDFF;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .background-sharp-yellow
@@ -26,4 +23,12 @@
 {
     background-color: #FE6B35;
     color: #FFFFFF;
+}
+
+
+.outline-black
+{
+    outline: 1px solid;
+    outline-color: #000000;
+    margin: 5px;
 }

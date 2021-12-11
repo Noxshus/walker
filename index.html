@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="stylesheet" href="walker.css">
         <script src="js/main.js"></script>
-        <script src="js/menu.js"></script> 
+        <script src="js/navigation.js"></script> 
     </head>
 
 
@@ -25,11 +25,11 @@
             </div>
         </section>
 
-        <div class="tabs is-centered is-boxed">
+        <div class="tabs is-centered is-boxed"> <!--navigation tabs-->
             <ul>
-              <li class="is-active"><a>Combat</a></li>
-              <li><a>Armoury</a></li>
-              <li><a>Pantheon</a></li>
+              <li id="combattabitem" class="is-active" onclick="TabClick(this.id)"><a>Combat</a></li>
+              <li id="armourytabitem" onclick="TabClick(this.id)"><a>Armoury</a></li>
+              <li id="pantheontabitem" onclick="TabClick(this.id)"><a>Pantheon</a></li>
             </ul>
         </div>
 
@@ -63,15 +63,71 @@
 
                 <div class="column"> <!--Main content screen-->
 
-                    <div id="dashboardmenucontent" class="menucontent">
+                    <div id="combattabcontent" class="tabcontent">
                         <p class="subtitle">Combat</p>
+
+                        <div class="tile is-ancestor">
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                              <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>                          
+                        </div>
+
+                        <div class="tile is-ancestor">
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                              <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                                <p>text</p>
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>                          
+                        </div>
+
+                        <div class="tile is-ancestor">
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                              <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>
+                            <div class="tile is-parent outline-black is-justify-content-center">
+                                <p>text</p>
+                            </div>                          
+                        </div>
                     </div>
                       
-                    <div id="customersmenucontent" class="menucontent" style="display: none;">
+                    <div id="armourytabcontent" class="tabcontent" style="display: none;">
                         <p class="subtitle">Armoury</p>
                     </div>
 
-                    <div id="customersmenucontent" class="menucontent" style="display: none;">
+                    <div id="pantheontabcontent" class="tabcontent" style="display: none;">
                         <p class="subtitle">Pantheon</p>
                     </div>
                 </div>
