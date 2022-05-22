@@ -18,7 +18,7 @@
     gameData.activeMenuItem = document.getElementById(_menuItem).id;
 }*/
 
-//Tab functionality - when click a tab, reveal its content and hide that of the previous tab
+//Tab functionality - when clicking a tab, reveal its content and hide that of the previous tab
 function TabClick(_tabItem) {
     let _count, _tabContent;
 
@@ -42,4 +42,12 @@ function TabClick(_tabItem) {
   //when given a string reference to a DOM ID relating to a menu or tab item, it will return the same string but pointing at the respective content instead of the item
 function ReturnContentFromItem (_item) {
     return _item.replace("item", "content");
+}
+
+//function to replace all the classes of an element with another set of classes. Main purpose of this is to keep HTML managable
+function ReplaceAllClassElementsWithElementClass(_toReplace, _replaceWith) {
+  let _toReplaceCollection = document.getElementsByClassName(_toReplace);
+  while (_toReplaceCollection.length) {
+    _toReplaceCollection[0].className = _replaceWith;
+  }
 }

@@ -6,6 +6,7 @@ var gameData = {
 
 window.onload = function () 
 {
+    ReplaceAllClassElementsWithElementClass("combat-tile", "tile is-parent outline-black is-justify-content-center");
     document.getElementById(ReturnContentFromItem(gameData.activeTabItem)).style.display = "block"; //unhide the previously selected menu item onload
 }
 
